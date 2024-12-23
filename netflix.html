@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color:#141414;
+  color: #fff;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a {
+    color: white;
+    position: relative;
+    padding: 5px 0;
+  }
+  nav ul li a:hover {
+    color: #fd4766;
+  }
+  nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: 0.3s;
+    bottom: 0;
+  }
+  nav ul li a:hover:after {
+    width: 100%;
+  }
+.login-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #141414;
+  background-position: 900px;
+  color: #fff;
+  padding: 4rem 2rem;
+  background-image: url('netflix.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1330px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.cta-btn1 {
+  background-color: #363146;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+
+/* Carousel */
+.carousel {
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.movie-card {
+  flex: 0 0 200px;
+  background-color: #333;
+  color: #fff;
+  height: 200px;
+  width: 200px;
+  margin-right: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Footer */
+.foot-panel1{
+
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    color: #dddddd;
+    margin-top: 10px;
+}
+.same{
+  color:white;
+  height: 250px;
+  width: 250px;
+  background-color: #181717;
+  
+
+}
+.que {
+  background-color: #000;
+  color: #fff;
+  text-indent: 25px;
+}
+.que1{
+  height: 50px;
+  width: 85%;
+  background-color: #333;
+  margin-top: 5.6px;
+  margin-left: 100px;
+  color: white;
+  text-align:left;
+  text-indent: 20px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #141414;
+  color: #fff;
+}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><h1>NETFLIX</h1></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+    </nav>
+    <button class="login-btn">Sign In</button>
+  </header>
+
+  <section class="hero">
+    <h1>Unlimited movies, </h1>
+    <h1>TV shows, and more.</h1>
+    <p>Watch anywhere. Cancel anytime.</p>
+    <input type="text"placeholder="Email address"class="cta-btn1">
+    <button class="cta-btn">Get Started</button>
+  </section>
+
+  <section class="carousel">
+    <h2>Trending Now</h2>
+    <div class="carousel-container">
+      <div class="movie-card"style="background-image: url('ne3.jpeg');">Movie 1</div>
+      <div class="movie-card"style="background-image: url('ne4.jpeg');">Movie 2</div>
+      <div class="movie-card"style="background-image: url('ne2.jpeg');">Movie 3</div>
+      <div class="movie-card"style="background-image: url('ne3.jpeg');">Movie 4</div>
+      <div class="movie-card"style="background-image: url('ne4.jpeg');">Movie 4</div>
+      <div class="movie-card"style="background-image: url('ne3.jpeg');">Movie 4</div>
+    </div>
+  </section>
+  <section class="carousel">
+    <h2>More reasons to join </h2>
+    <br>
+  <div class="foot-panel1">
+    <div class="same">
+    <ul>
+        <p><h3>Enjoy on your TV</h3></p><br>
+        <a>Watch on smart TVs,</a>
+        <a>PlayStation,Xbox,Chromecast</a>
+        <a>Apple TV,Blu-ray players and more. </a>
+    </ul></div>
+    <div class="same">
+    <ul>
+        <p><h3>Download your<br>shows to watch<br>offline</h3></p><br>
+        <a>Save your favourites easily and always have something to watch</a>
+    </ul></div>
+    <div class="same">
+    <ul>
+        <p><h3>Watch everywhere</h3></p><br>
+        <a>stream unlimited movies and TV shows on your phone,tablet,laptop and TV.</a>
+    </ul></div>
+    <div class="same">
+    <ul>
+        <p><h3>Create profile for kids</h3></p><br>
+        <a>Send kids on adventures with their favourite characters in a space made just for them--free with your membership.</a>
+        
+    </ul></div>
+  </div>
+</section>
+<div class="que">
+  <h2>Frequently Asked Questions</h2>
+  <br>
+  <button class="que1">What is Netflix?</button><br>
+  <button class="que1">How much does Netflix cost?</button><br>
+  <button class="que1">Where can I watch?</button><br>
+  <button class="que1">How do I cancel?</button><br>
+  <button class="que1">What can I watch on Netflix?</button><br>
+  <br>
+  <br>
+</div>
+
+  <footer>
+    <p>&copy; 2024 Netflix Clone</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  console.log('Netflix Clone Ready!');
+});
+  </script>
+</body>
+</html>
